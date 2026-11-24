@@ -56,4 +56,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Reference Link
 ![Microsoft](https://img.shields.io/badge/Microsoft-blueviolet) https://developer.microsoft.com/zh-tw/windows/apps/tutorials/winui-notes
-![Learn WinUI3](https://img.shields.io/badge/WinUI) https://github.com/PacktPublishing/Learn-WinUI-3-Second-Edition
+
+![Learn WinUI3](https://img.shields.io/badge/WinUI-blueviolet) https://github.com/PacktPublishing/Learn-WinUI-3-Second-Edition
