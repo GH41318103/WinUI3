@@ -53,3 +53,6 @@ Modern Windows desktop UI exploration using **WinUI 3** and **C++ / C#**, focusi
 
 ##  License
 This project is licensed under the [MIT License](LICENSE).
+
+## Reference Link
+![Microsoft](https://img.shields.io/badge/Microsoft-blueviolet) https://developer.microsoft.com/zh-tw/windows/apps/tutorials/winui-notes
