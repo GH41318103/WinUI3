@@ -4,6 +4,7 @@ Modern Windows desktop UI exploration using **WinUI 3** and **C++ / C#**, focusi
 
 ![Status](https://img.shields.io/badge/Status-Development-blue)
 ![C#](https://img.shields.io/badge/Language-C%23-blueviolet)
+![C++](https://img.shields.io/badge/Language-C%2B%2B-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
 
