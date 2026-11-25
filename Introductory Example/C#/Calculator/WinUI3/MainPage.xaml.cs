@@ -1,3 +1,52 @@
+// MainPage.xaml.cs 負責處理直接的畫面與使用者介面互動（View），
+// 而 MainPageViewModel.cs 則專注於管理資料狀態與商業邏輯（ViewModel）。
+// 這兩者的分工源自於 .NET 開發（如 MAUI、WPF、WinUI）中常見的 MVVM（Model-View-ViewModel）設計模式。
+/*
+ 
+ 
+實際運作流程差異
+1. MainPage.xaml.cs 的運作（傳統事件驅動）
+當使用者在畫面上點擊按鈕時，UI 元件直接觸發寫在 .xaml.cs 裡的方法，程式碼必須親自去抓畫面上其他元件的值，計算完後再手動塞回去。
+• 適用情境：純粹的視覺動畫、畫面剛載入時的焦點設定（Focus）、或極度依賴特定 UI 控制項的操作。
+• 範例邏輯：csharp
+// MainPage.xaml.cs
+private void OnButtonClicked(object sender, EventArgs e)
+{
+    // 直接操作 UI 元件名稱
+    string input = NameEntry.Text; 
+    GreetingLabel.Text = $"你好, {input}";
+}
+2. MainPageViewModel.cs 的運作（資料驅動）
+畫面（.xaml）透過 {Binding} 綁定到 ViewModel 的屬性與命令。當使用者輸入文字或點擊按鈕時，框架會自動把資料同步到 ViewModel；當 ViewModel 裡的資料改變時，會發出「屬性已變更」的通知，畫面便會自動刷新。
+• 適用情境：API 資料串接、表單驗證、列表資料處理、按鈕點擊後的商業邏輯判斷。
+• 範例邏輯：csharp
+// MainPageViewModel.cs (以 CommunityToolkit.Mvvm 為例)
+public partial class MainPageViewModel : ObservableObject
+{
+    [ObservableProperty]
+    private string userName;
+
+    [ObservableProperty]
+    private string greetingMessage;
+
+    [RelayCommand]
+    private void SayHello()
+    {
+        // 只處理資料，完全不碰 UI 元件
+        GreetingMessage = $"你好, {UserName}";
+    }
+}
+兩者如何串接在一起？
+通常會在 MainPage.xaml.cs 的建構函式（Constructor）中，將 ViewModel 指定給畫面的 BindingContext（或 DataContext），兩者就正式建立連線：
+csharp
+// MainPage.xaml.cs
+public MainPage()
+{
+    InitializeComponent();
+    // 將 ViewModel 綁定到這個頁面
+    this.BindingContext = new MainPageViewModel(); 
+}
+ */
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 namespace WinUI3
