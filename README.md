@@ -66,4 +66,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ![Microsoft](https://img.shields.io/badge/Microsoft-blueviolet) [https://developer.microsoft.com/zh-tw/windows/apps/tutorials/winui-notes](https://learn.microsoft.com/en-us/windows/apps/dev-tools/visual-studio)
 
+![Xaml](https://img.shields.io/badge/Xaml-blueviolet) https://learn.microsoft.com/zh-tw/dotnet/desktop/wpf/xaml/
+
 ![Learn WinUI3](https://img.shields.io/badge/WinUI-blueviolet) https://github.com/PacktPublishing/Learn-WinUI-3-Second-Edition
