@@ -2,6 +2,13 @@
 
 Modern Windows desktop UI exploration using **WinUI 3** and **C++ / C#**, focusing on native UI architecture, event-driven programming, and client-side state management as part of a broader Full-Stack engineering learning path.
 
+<p align="center">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyIfdoEYa9j5dmlPivJpTVQKaV6tMdEEtobZhPCJKiNZBLq2t7w6tXYq7oiK2HIpUDelXF5bu_8JqKQaohWNVQuoJIpvQxiPVKphtmVO2GhoBGtxmRVivY_C7Bl8NVp7C_0tA6ZdUf1Ng/s0-rw/winui-min.jpg" alt="WinUI" width="600" />
+</p>
+
+
+
+
 ![Status](https://img.shields.io/badge/Status-Development-blue)
 ![C#](https://img.shields.io/badge/Language-C%23-blueviolet)
 ![C++](https://img.shields.io/badge/Language-C%2B%2B-blueviolet)
